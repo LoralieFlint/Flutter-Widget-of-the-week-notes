@@ -61,3 +61,18 @@ MyBlueRect(
         child: MyCatPic(),
     ),
 )
+
+# LayoutBuilder
+the builder function has built in parameter for incoming box constraints so knowing the valid width and height constraints for our device is at ease
+
+Widget build(BuildContext context) {
+    return LayoutBuilder(
+        builder: (context, constraints) {
+            if(constraints.maxWidth < 600) {
+                return MyOneColumnLayout();
+            }else{
+                return MyTwoColumnLayout();
+            }
+        },
+    );
+}
