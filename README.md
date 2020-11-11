@@ -34,3 +34,18 @@ canvas.drawParagraph()
 colors, shaders, blend modes, etc.
 
 # Tooltip
+similar to accessibility in web side with images and links with alt tags 
+use Tooltip for screen readers
+
+Tooltip(
+    message: 'Dash',
+    verticalOffset: 40,
+    height: 24,
+    child: MyVisualWidget(),
+)
+
+#### some Material widgets already come with Tooltip included such as IconButton
+IconButton(
+    iconButton: Icon(Icons.high.quality),
+    tooltip: 'high quality',
+)
