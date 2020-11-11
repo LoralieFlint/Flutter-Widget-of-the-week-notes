@@ -49,3 +49,15 @@ IconButton(
     iconButton: Icon(Icons.high.quality),
     tooltip: 'high quality',
 )
+
+
+# FiitedBox
+this works very similar to flexbox in CSS 
+
+MyBlueRect(
+    child: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.contain,
+        child: MyCatPic(),
+    ),
+)
